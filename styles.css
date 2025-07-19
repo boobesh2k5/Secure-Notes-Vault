@@ -1,0 +1,200 @@
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #1cc88a;
+  --danger-color: #e74a3b;
+  --warning-color: #f6c23e;
+}
+
+body {
+  background: linear-gradient(to right, #f8f9fc 0%, #e9ecef 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.auth-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 15px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+  background-size: cover;
+  border-radius: 15px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Auth Card */
+.auth-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0.15rem 1.75rem rgba(58, 59, 69, 0.15);
+  transition: all 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.5rem rgba(58, 59, 69, 0.2);
+}
+
+.auth-header {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-success {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+  color: #fff;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.input-group-text {
+  background-color: #f8f9fc;
+}
+
+/* Updated visibility classes */
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.card-profile, .card-activity, .card-token {
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+
+.dashboard-title {
+  color: var(--primary-color);
+}
+
+.note-card {
+  border-left: 4px solid var(--secondary-color);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.note-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.note-date {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.notes-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.vault-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.vault-header {
+  background: linear-gradient(135deg, var(--primary-color), #2a3f9d);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 5rem;
+}
+
+/* Scrollbar styling */
+.notes-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notes-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.notes-container::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.notes-container::-webkit-scrollbar-thumb:hover {
+  background: #2a3f9d;
+}
+
+/* Additional styles */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 0.5em 0.75em;
+}
+
+div:where(.swal2-icon) {
+  -webkit-user-select: none;
+  user-select: none;
+}
