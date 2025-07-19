@@ -1,4 +1,4 @@
-# Sensitive Data
+#  Sensitive Data
 .env
 .env.local
 *.key
